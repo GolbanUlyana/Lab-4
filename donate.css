@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 800px; /* Задайте максимальну ширину контейнера */
+    margin: -5px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel,
+.right-panel {
+    flex: 1; /* Дві колонки рівної ширини */
+    padding: 20px;
+}
+
+.left-panel {
+    background-color: white;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px; /* Максимальна ширина для лівої частини */
+    box-sizing: border-box;
+}
+
+.site-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.site-info .site-text {
+    color: #666;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group span, .form-group p {
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input[type="number"] {
+    width: 100px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #92ffe7;
+    outline: none;
+    margin-right: 10px;
+}
+
+.form-group .currency {
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+
+.left-panel h1,
+.right-panel h3 {
+    margin: 0 0 10px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-info {
+    display: flex; 
+    justify-content: space-between; /* Розміщення колонок з відстанню */
+    margin-bottom: 15px; /* Відстань між групами полів */
+    padding: 15px;
+    border: 2px solid #eaeaea; 
+    border-radius: 20px; 
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; 
+}
+
+.input-column {
+    flex: 1; 
+    margin-right: 30px; 
+}
+
+.input-column:last-child {
+    margin-right: 0; /* Прибрати відстань для останньої колонки */
+}
+
+/* Стилі для полів з підкресленням */
+input.underline {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px;
+    border: none; 
+    border-bottom: 2px solid #92ffe7; 
+}
+
+input.underline:focus {
+    outline: none; /* Прибрати контур при фокусі */
+    border-bottom: 2px solid rgb(0, 139, 109); /* Темно-сине підкреслення при фокусі */
+}
+
+/* Стилі для інших полів з рамками */
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #dedede; /* Рамка */
+    border-radius: 4px; /* Краї рамки */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.alternative-payment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.alternative-payment button {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.alternative-payment button:last-child {
+    margin-right: 0;
+}
